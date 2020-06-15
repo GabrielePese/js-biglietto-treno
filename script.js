@@ -17,11 +17,11 @@ console.log (anni)
 
 if (anni < 18) { var costo = (km * 0.21) * 0.8}
 else if (anni >= 65) { var costo = (km * 0.21) * 0.6}
-else {
-
-var costo = km * 0.21};
+else { var costo = km * 0.21};
 console.log (costo)
 
 var costo = costo.toFixed(2)
 
 document.getElementById("title").innerHTML = "Il costo del biglietto è di " + costo + " euro" ;
+
+if (costo > 50) { document.getElementById("title2").innerHTML = "Per il tuo biglietto hai speso più di 50 €. Infatti hai speso " + costo + " per questo hai diritto a un couopon del 10% sul prossimo viaggio "  }
